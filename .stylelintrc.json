@@ -1,0 +1,16 @@
+{
+  "extends": "stylelint-config-standard",
+  "plugins": ["stylelint-selector-bem-pattern", "stylelint-order"],
+  "ignoreFiles": ["**/*.js"],
+  "rules": {
+    "plugin/selector-bem-pattern": {
+      "componentName": "(([a-z0-9]+(?!-$)-?)+)",
+      "componentSelectors": {
+        "initial":
+          "\\.{componentName}(((__|--)(([a-z0-9]\\[\\]'=]+(?!-$)-?)+))+)?$"
+      },
+      "ignoreSelectors": [".*\\.no-js.*", ".*\\.js-.*", ".*\\.lt-ie.*"]
+    },
+    "order/properties-alphabetical-order": true
+  }
+}

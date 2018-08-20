@@ -1,0 +1,46 @@
+{
+  "name": "react-static-example-basic",
+  "version": "1.0.1",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "react-static start",
+    "stage": "react-static build --staging",
+    "build": "react-static build",
+    "serve": "serve dist -p 3000"
+  },
+  "dependencies": {
+    "axios": "^0.16.2",
+    "babel-eslint": "^8.2.6",
+    "eslint": "^5.2.0",
+    "eslint-config-airbnb": "^17.0.0",
+    "eslint-config-airbnb-base": "^13.0.0",
+    "eslint-config-standard": "^11.0.0",
+    "eslint-config-standard-react": "^6.0.0",
+    "eslint-plugin-import": "^2.13.0",
+    "eslint-plugin-jsx-a11y": "^6.1.1",
+    "eslint-plugin-node": "^7.0.1",
+    "eslint-plugin-promise": "^3.8.0",
+    "eslint-plugin-react": "^7.10.0",
+    "eslint-plugin-standard": "^3.1.0",
+    "file-loader": "^1.1.11",
+    "react": "^16.4.0",
+    "react-dom": "^16.4.2",
+    "react-hot-loader": "^4.3.4",
+    "react-router": "^4.2.0",
+    "react-static": "^5.9.7",
+    "stylelint": "^9.4.0",
+    "stylelint-config-recommended": "^2.1.0",
+    "stylelint-config-standard": "^18.2.0",
+    "stylelint-order": "^0.8.1",
+    "stylelint-selector-bem-pattern": "^2.0.0",
+    "url-loader": "^1.0.1"
+  },
+  "devDependencies": {
+    "eslint-config-react-tools": "1.x.x",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "node-sass": "^4.9.2",
+    "sass-loader": "^6.0.7",
+    "serve": "^6.1.0"
+  }
+}
