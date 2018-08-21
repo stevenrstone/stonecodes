@@ -39,10 +39,12 @@ export default class Home extends Component {
                 <ScHero data={homeData.hero} />
                 {/* Title 2 */}
                 <h3 className="sc-title">{homeData.title2}</h3>
+                <p className="sc-subtitle">{homeData.subtitle2}</p>
                 {/* Professional Work */}
                 <ScPortfolio data={homeData.portfolio} />
                 {/* Title 3 */}
                 <h3 className="sc-title">{homeData.title3}</h3>
+                <p className="sc-subtitle">{homeData.subtitle3}</p>
                 <ScPortfolio data={homeData.personal} />
               </div>
             )}

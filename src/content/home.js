@@ -56,11 +56,11 @@ export default {
   ],
   title3: 'Personal Interests',
   subtitle3:
-    "I enjoy this line of work, but I'm not one to eat, drink, and breathe code outside the office. I fill that time with other interests:",
+    "I enjoy this line of work, but I'm not one to breathe code outside the office. I fill that time with other interests:",
   personal: [
     {
       title: 'Video Games',
-      subtitle: 'Some favorites? Skyrim, Overwatch, Chrono Trigger, Mega Man X',
+      subtitle: 'Skyrim, Overwatch, Chrono Trigger, Mega Man X',
       moreInfo:
         'A lifelong video game hobby played a big role in me picking up computer science in college.',
       image: '../images/controller.png',
@@ -69,26 +69,30 @@ export default {
       title: 'Sports & eSports',
       subtitle: 'London Spitfire, St. Louis Cardinals',
       moreInfo:
-        "I've mostly moved over to Overwatch League these days, but still enjoy a baseball game from time to time. And yes, I grew up in St. Louis.",
+        "I've mostly moved over to Overwatch League these days, but still enjoy a baseball game from time to time.",
       image: '../images/sports.png',
     },
     {
       title: 'Dungeons & Dragons',
-      moreInfo: '',
-      subtitle: 'Fifth Edition, please!',
+      moreInfo:
+        'I\'m much more interested in the "game" than the "roleplaying,", but I know the latter is what makes it so enjoyable.',
+      subtitle:
+        "Barbarian, Cleric, Druid, Paladin, Rogue, Warlock...I'm not picky.",
       image: '../images/d20.png',
     },
     {
       title: 'Music',
-      subtitle: 'My taste?',
-      moreInfo: 'Dragonforce, Alter Bridge, Riverside, Haken, Flying Colors',
+      subtitle:
+        'Dragonforce, Rush, Alter Bridge, Riverside, Haken, Flying Colors, Thrice',
+      moreInfo:
+        'My taste has ranged from emo to symphonic power metal over the years.',
       image: '../images/headphones.svg',
     },
     {
       title: 'Books',
       subtitle: '',
-      moreInfo:
-        "I've started getting into fantasy novels - most recently, Brandon Sanderson's Mistborn trilogy and Robert J. Bennet's Foundryside",
+      moreInfo: "I've just recently started getting into fantasy novels.",
+      image: '../images/book.svg',
     },
   ],
 };
