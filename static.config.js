@@ -3,7 +3,7 @@ import ExtractTextPlugin from 'extract-text-webpack-plugin';
 import homeData from './src/content/home';
 
 export default {
-  siteRoot: 'https://stone.codes',
+  // siteRoot: 'https://stone.codes',
   getSiteData: () => ({
     siteTitle: 'stone.codes v0.1',
   }),
