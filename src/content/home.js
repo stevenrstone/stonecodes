@@ -14,7 +14,7 @@ export default {
   },
   title2: 'Professional Portfolio',
   subtitle2:
-    "For the past three-plus years, I've been working with a variety of clients for VML in Kansas City. The frontend landscape tends to change quickly, and my work reflects that - technologies used run from Gulp.js to Webpack and jQuery to React, with Sass as a mainstay and C#/Razor thrown in where necessary.",
+    "For the past three-plus years, I've been working with a variety of clients for VML in Kansas City. The frontend landscape tends to change quickly, and my work reflects that - technologies used run from Gulp.js to Webpack and jQuery to React, with Sass as a mainstay and C#/Razor thrown in where necessary. I've been the only frontend dev on most of my projects, and am no stranger to switching gears as needed.",
   portfolio: [
     {
       title: 'Gatorade',
@@ -75,7 +75,7 @@ export default {
     {
       title: 'Dungeons & Dragons',
       moreInfo:
-        'I\'m much more interested in the "game" than the "roleplaying,", but I know the latter is what makes it so enjoyable.',
+        'I\'m much more interested in the "game" than the "roleplaying," but I know the latter is what makes it so enjoyable.',
       subtitle:
         "Barbarian, Cleric, Druid, Paladin, Rogue, Warlock...I'm not picky.",
       image: '../images/d20.png',
@@ -83,14 +83,14 @@ export default {
     {
       title: 'Music',
       subtitle:
-        'Dragonforce, Rush, Alter Bridge, Riverside, Haken, Flying Colors, Thrice',
+        'Dragonforce, Kamelot, Alter Bridge, Riverside, Haken, Flying Colors, Thrice, Rush',
       moreInfo:
         'My taste has ranged from emo to symphonic power metal over the years.',
       image: '../images/headphones.svg',
     },
     {
       title: 'Books',
-      subtitle: '',
+      subtitle: 'The Lies of Locke Lamora, Mistborn, Foundryside',
       moreInfo: "I've just recently started getting into fantasy novels.",
       image: '../images/book.svg',
     },

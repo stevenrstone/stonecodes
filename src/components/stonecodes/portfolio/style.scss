@@ -16,10 +16,10 @@
 
   @media (min-width: 48rem) {
     flex-wrap: nowrap;
-    height: 15rem;
+    height: 21rem;
     margin: 0 auto;
     overflow: visible;
-    width: 80%;
+    width: 90%;
   }
 }
 
@@ -27,86 +27,100 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
-  bottom: 0;
-  height: 100%;
-  left: 0;
+  box-sizing: content-box;
+  height: 20vw;
   opacity: 1;
-  position: absolute;
-  right: 0;
-  top: 0;
   transition: opacity 0.4s ease;
   width: 100%;
   z-index: 1;
+
+  @media (min-width: 48rem) {
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+  }
 }
 
 .sc-portfolio__section__foreground {
-  bottom: 0;
-  left: 0;
-  position: absolute;
-  right: 0;
-  top: 0;
-  z-index: 20;
+  height: 100%;
+
+  @media (min-width: 48rem) {
+    align-items: center;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 20;
+  }
 }
 
 .sc-portfolio__section__description {
-  color: transparent;
+  color: #333;
   font-size: 1.1rem;
   font-weight: 600;
   margin: 1rem auto;
   max-width: 80%;
   text-align: center;
   z-index: 10;
+
+  @media (min-width: 48rem) {
+    color: transparent;
+  }
 }
 
 .sc-portfolio__section__title {
-  color: transparent;
+  color: #333;
   font-size: 1.4rem;
   letter-spacing: 0.02em;
+  margin-top: 0;
   text-align: center;
   z-index: 10;
+
+  @media (min-width: 48rem) {
+    color: transparent;
+    margin: initial;
+  }
 }
 
 .sc-portfolio__section {
-  --skew-rate: 15deg;
-  --anti-skew-rate: -15deg;
+  // --skew-rate: 15deg;
+  // --anti-skew-rate: -15deg;
 
-  // background: blue;
   box-sizing: border-box;
-  flex-basis: 50%;
-  height: 15rem;
-  max-width: 50%;
   overflow: hidden;
-  padding: 0.5rem 0 2rem;
+  padding: 1rem 0;
   position: relative;
-  // transform: skew(var(--skew-rate));
-  transition: flex-grow 0.4s ease, background 0.4s ease;
+  width: 100%;
 
-  > * {
-    // transform: skew(var(--anti-skew-rate));
-  }
+  &:nth-child(even) {
+    background-color: rgba(5, 110, 145, 0.2);
 
-  &:hover,
-  &:active,
-  &:focus {
-    background-color: rgba(5, 110, 145, 0.61);
-
-    .sc-portfolio__section__background {
-      opacity: 0.1;
-    }
-
-    .sc-portfolio__section__title,
-    .sc-portfolio__section__description {
-      color: #1d1d1b;
-      text-shadow: 0 0 2px white;
+    @media (min-width: 48rem) {
+      background-color: transparent;
     }
   }
 
   @media (min-width: 48rem) {
-    // background-color: blue;
     flex: 1;
     flex-grow: 1;
     height: 100%;
     max-width: none;
+    padding: 0.5rem 0 2rem;
+    transition: flex-grow 0.4s ease, background 0.4s ease;
+
+    > * {
+      // transform: skew(var(--anti-skew-rate));
+    }
+
+    // transform: skew(var(--skew-rate));
 
     .sc-portfolio__section__title,
     .sc-portfolio__section__description {
@@ -114,37 +128,37 @@
       transition: color 0.5s ease, text-shadow 0.4s ease;
     }
 
+    .sc-portfolio__section__background {
+      opacity: 0.1;
+
+      @media (min-width: 48rem) {
+        opacity: 1;
+      }
+    }
+
     &:hover,
     &:active,
     &:focus {
+      background-color: rgba(5, 110, 145, 0.61);
       flex-grow: 2;
-    }
-  }
 
-  &:nth-child(4n + 1),
-  &:nth-child(4n) {
-    // transform: skew(var(--anti-skew-rate));
-    // background: orange;
+      .sc-portfolio__section__background {
+        opacity: 0.1;
+      }
 
-    > * {
-      // transform: skew(var(--skew-rate));
-    }
+      .sc-portfolio__section__title,
+      .sc-portfolio__section__description {
+        color: #333;
+        text-shadow: 0 0 2px white;
+      }
 
-    @media (min-width: 48rem) {
-      // transform: skew(var(--skew-rate));
-
-      > * {
-        // transform: skew(var(--anti-skew-rate));
+      .sc-portfolio__section__title {
       }
     }
   }
 
   &:first-child,
   &:last-child {
-    flex-basis: 100%;
-    margin: 0 auto;
-    max-width: 100%;
-
     @media (min-width: 48rem) {
       flex: 1;
       margin: auto;
