@@ -114,7 +114,7 @@
     height: 100%;
     max-width: none;
     padding: 0.5rem 0 2rem;
-    transition: flex-grow 0.4s ease, background 0.4s ease;
+    transition: flex-grow 0.2s ease, background 0.2s ease;
 
     > * {
       // transform: skew(var(--anti-skew-rate));
@@ -125,7 +125,7 @@
     .sc-portfolio__section__title,
     .sc-portfolio__section__description {
       text-shadow: 0 0 2px transparent;
-      transition: color 0.5s ease, text-shadow 0.4s ease;
+      transition: color 0.1s ease, text-shadow 0.1s ease;
     }
 
     .sc-portfolio__section__background {
@@ -150,6 +150,7 @@
       .sc-portfolio__section__description {
         color: #333;
         text-shadow: 0 0 2px white;
+        transition: text-shadow 0.8s linear, color 0.8s ease;
       }
 
       .sc-portfolio__section__title {

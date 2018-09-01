@@ -7,13 +7,13 @@ export default {
     title: 'Steven Stone',
     subtitle: 'web developer | kansas city',
     description:
-      "I've been building websites professionally for more than five years, most recently with VML.",
+      "Currently located at VML, I've been building websites professionally for more than five years.",
     background: '../images/steven-c3.jpg',
     backgroundAlt: 'Steven Stone',
     // bgImport: herobg,
   },
-  title2: 'Professional Portfolio',
-  subtitle2:
+  h2: 'Professional Portfolio',
+  p:
     "For the past three-plus years, I've been working with a variety of clients for VML in Kansas City. The frontend landscape tends to change quickly, and my work reflects that - technologies used run from Gulp.js to Webpack and jQuery to React, with Sass as a mainstay and C#/Razor thrown in where necessary. I've been the only frontend dev on most of my projects, and am no stranger to switching gears as needed.",
   portfolio: [
     {
@@ -56,7 +56,7 @@ export default {
   ],
   title3: 'Personal Interests',
   subtitle3:
-    "I enjoy this line of work, but I'm not one to breathe code outside the office. I fill that time with other interests:",
+    "While I enjoy this line of work, I'm not one to breathe code outside the office. I fill that time with other interests:",
   personal: [
     {
       title: 'Video Games',
@@ -78,7 +78,7 @@ export default {
         'I\'m much more interested in the "game" than the "roleplaying," but I know the latter is what makes it so enjoyable.',
       subtitle:
         "Barbarian, Cleric, Druid, Paladin, Rogue, Warlock...I'm not picky.",
-      image: '../images/d20.png',
+      image: '../images/d20-padded.png',
     },
     {
       title: 'Music',
@@ -92,7 +92,7 @@ export default {
       title: 'Books',
       subtitle: 'The Lies of Locke Lamora, Mistborn, Foundryside',
       moreInfo: "I've just recently started getting into fantasy novels.",
-      image: '../images/book.svg',
+      image: '../images/book-padded.png',
     },
   ],
 };
