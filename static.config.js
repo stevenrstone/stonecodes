@@ -1,17 +1,41 @@
 import ExtractTextPlugin from 'extract-text-webpack-plugin';
+import React from 'react';
 
 import homeData from './src/content/home';
 
 export default {
   // siteRoot: 'https://stone.codes',
+  Document: ({
+    Html, Head, Body, children,
+  }) => (
+    <Html lang="en-US">
+      <Head>
+        <meta charSet="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Stone Code Productions</title>
+      </Head>
+      <Body>{children}</Body>
+    </Html>
+  ),
+  extractCssChunks: true,
+  inlineCss: true,
   getSiteData: () => ({
     siteTitle: 'stone.codes v0.1',
+    title: 'Home',
   }),
   getRoutes: async () => [
     {
       path: '/',
       component: 'src/containers/Home',
-      getData: () => homeData,
+      getData: async () => homeData,
+    },
+    {
+      path: '/home',
+      component: 'src/containers/Home',
+      routeData: {
+        title: 'Home',
+      },
+      getData: async () => homeData,
     },
     {
       is404: true,
