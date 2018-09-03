@@ -17,25 +17,14 @@ export default {
       <Body>{children}</Body>
     </Html>
   ),
-  extractCssChunks: true,
-  inlineCss: true,
   getSiteData: () => ({
     siteTitle: 'stone.codes v0.1',
-    title: 'Home',
   }),
   getRoutes: async () => [
     {
       path: '/',
       component: 'src/containers/Home',
-      getData: async () => homeData,
-    },
-    {
-      path: '/home',
-      component: 'src/containers/Home',
-      routeData: {
-        title: 'Home',
-      },
-      getData: async () => homeData,
+      getData: () => homeData,
     },
     {
       is404: true,

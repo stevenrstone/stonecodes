@@ -64,7 +64,7 @@
   color: var(--copy-color);
   font-size: 1rem;
   margin: 0 auto;
-  max-width: 24rem;
+  // max-width: 24rem;
   padding: 0.5rem 1rem;
   text-align: center;
   text-shadow: var(--text-shadow);
@@ -72,6 +72,7 @@
 
   @media (min-width: 48rem) {
     margin: 0;
+    max-width: 24rem;
     padding: 0;
     padding: var(--text-padding);
     text-align: left;

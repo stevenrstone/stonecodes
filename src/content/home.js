@@ -12,8 +12,8 @@ export default {
     backgroundAlt: 'Steven Stone',
     // bgImport: herobg,
   },
-  h2: 'Professional Portfolio',
-  p:
+  title2: 'Professional Portfolio',
+  subtitle2:
     "For the past three-plus years, I've been working with a variety of clients for VML in Kansas City. The frontend landscape tends to change quickly, and my work reflects that - technologies used run from Gulp.js to Webpack and jQuery to React, with Sass as a mainstay and C#/Razor thrown in where necessary. I've been the only frontend dev on most of my projects, and am no stranger to switching gears as needed.",
   portfolio: [
     {
