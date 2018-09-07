@@ -27,6 +27,10 @@ export default {
       getData: () => homeData,
     },
     {
+      path: '/roll',
+      component: 'src/containers/Dice',
+    },
+    {
       is404: true,
       component: 'src/containers/404',
     },
