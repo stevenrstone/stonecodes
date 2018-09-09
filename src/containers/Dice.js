@@ -3,6 +3,8 @@ import { SiteData } from 'react-static';
 import ScTitleBar from '../components/stonecodes/title-bar';
 import ScDiceButton from '../components/dice/button';
 
+import '../components/dice/style.scss';
+
 export default class Dice extends Component {
   constructor() {
     super();
@@ -48,9 +50,37 @@ export default class Dice extends Component {
   }
 
   render() {
+    const renderRolls = (
+      timeframe = 'current',
+      currentRolls = this.state.currentRolls,
+      setIndex,
+    ) => (
+      <React.Fragment>
+        <ul className={`sc-dice__${timeframe}__rolls`} key={setIndex}>
+          {currentRolls.map((roll, index) => (
+            <li
+              key={index}
+              className={`sc-dice__${timeframe}__rolls__item`}
+              data-value={roll}
+            >
+              {roll}
+            </li>
+          ))}
+        </ul>
+        <span className={`sc-dice__${timeframe}__total`}>
+          {currentRolls.reduce((acc, roll) => acc + roll, 0)}
+          <span className={`sc-dice__${timeframe}__number`}>
+            {`${currentRolls.length} roll${
+              currentRolls.length === 1 ? '' : 's'
+            }`}
+          </span>
+        </span>
+      </React.Fragment>
+    );
+
     const renderHistory = () => {
       const { history } = this.state;
-      return history.map((historySet, index) => renderRolls('past', historySet));
+      return history.map((historySet, index) => renderRolls('past', historySet, index));
     };
 
     const renderButtons = () => {
@@ -67,34 +97,17 @@ export default class Dice extends Component {
       ));
     };
 
-    const renderRolls = (
-      timeframe = 'current',
-      currentRolls = this.state.currentRolls,
-    ) => (
-      <ul className={`sc-dice__${timeframe}__rolls`}>
-        {currentRolls.map((roll, index) => (
-          <li
-            key={index}
-            className={`sc-dice__${timeframe}__rolls__item`}
-            data-value={roll}
-          >
-            {roll}
-          </li>
-        ))}
-        <span className={`sc-dice__${timeframe}__total`}>
-          {currentRolls.reduce((acc, roll) => acc + roll, 0)}
-          <span className={`sc-dice__${timeframe}__total`}>
-            ({currentRolls.length} roll(s))
-          </span>
-        </span>
-      </ul>
-    );
     return (
       <SiteData
         render={({ siteTitle }) => (
-          <div className="sc-container sc-dice">
-            {/* Title Banner */}
-            <ScTitleBar title={siteTitle} show={true} />
+          <div className="sc-dice-container">
+            <ScTitleBar
+              title={siteTitle}
+              show={true}
+              clickOverride={() => {
+                window.location = '/';
+              }}
+            />
             <div className="sc-dice__display">
               <div className="sc-dice__history">{renderHistory()}</div>
               <div className="sc-dice__current">{renderRolls()}</div>

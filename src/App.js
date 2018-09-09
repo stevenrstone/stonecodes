@@ -8,7 +8,7 @@ import './app.scss';
 
 const App = () => (
   <Router>
-    <div className="sc-container">
+    <div className="">
       <Routes />
     </div>
   </Router>

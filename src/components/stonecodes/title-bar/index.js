@@ -2,8 +2,12 @@ import React from 'react'; // eslint-disable-line
 
 import './style.scss';
 
-export default ({ title, show = '' }) => {
+export default ({ title, show = '', clickOverride = null }) => {
   const handleClick = () => {
+    if (clickOverride) {
+      clickOverride();
+      return;
+    }
     if (typeof window !== 'undefined') {
       window.scroll({
         top: 0,
