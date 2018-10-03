@@ -1,5 +1,6 @@
 .sc-dice-container {
   height: 100vh;
+  overflow: hidden;
   position: relative;
   width: 100vw;
 }
@@ -27,11 +28,19 @@
 
 .sc-dice__options {
   align-items: flex-start;
+  border-top: 1px solid black;
+  bottom: 0;
   display: flex;
   flex-wrap: wrap;
   height: 30%;
   justify-content: space-around;
+  position: absolute;
   width: 100%;
+  z-index: 10;
+
+  &.expanded {
+    height: 60%;
+  }
 }
 
 .sc-dice__current__rolls,
@@ -73,7 +82,7 @@
 }
 
 .sc-dice__past__rolls {
-  flex-basis: 20%;
+  height: 20%;
   margin: 0;
 }
 

@@ -55,8 +55,8 @@ export default class Dice extends Component {
       currentRolls = this.state.currentRolls,
       setIndex,
     ) => (
-      <React.Fragment>
-        <ul className={`sc-dice__${timeframe}__rolls`} key={setIndex}>
+      <React.Fragment key={setIndex}>
+        <ul className={`sc-dice__${timeframe}__rolls`}>
           {currentRolls.map((roll, index) => (
             <li
               key={index}
@@ -97,6 +97,11 @@ export default class Dice extends Component {
       ));
     };
 
+    const renderOptions = (e) => {
+      const target = e.target.parentNode;
+      target.classList.toggle('expanded');
+    };
+
     return (
       <SiteData
         render={({ siteTitle }) => (
@@ -112,7 +117,17 @@ export default class Dice extends Component {
               <div className="sc-dice__history">{renderHistory()}</div>
               <div className="sc-dice__current">{renderRolls()}</div>
             </div>
-            <div className="sc-dice__options">{renderButtons()}</div>
+            <div className="sc-dice__options">
+              {renderButtons()}
+              <button
+                type="button"
+                className="sc-dice-button sc-dice-button--options"
+                onClick={e => renderOptions(e)}
+              >
+                ...
+              </button>
+              <div className="sc-dice-more-options"
+            </div>
           </div>
         )}
       />
