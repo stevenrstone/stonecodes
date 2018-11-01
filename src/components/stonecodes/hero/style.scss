@@ -70,9 +70,13 @@
   text-shadow: var(--text-shadow);
   width: 100%;
 
+  a {
+    color: var(--copy-color);
+  }
+
   @media (min-width: 48rem) {
     margin: 0;
-    max-width: 24rem;
+    max-width: 23rem;
     padding: 0;
     padding: var(--text-padding);
     text-align: left;

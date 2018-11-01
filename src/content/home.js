@@ -7,24 +7,24 @@ export default {
     title: 'Steven Stone',
     subtitle: 'web developer | kansas city',
     description:
-      "Currently located at VML, I've been building websites professionally for more than five years.",
+      'Currently located in Kansas City, I\'ve been building websites for more than five years. Some examples of my work, including this site, can be found on <a href="https://github.com/stevenrstone" target="_blank" rel="noopener">Github</a>.',
     background: '../images/steven-c3.jpg',
     backgroundAlt: 'Steven Stone',
     // bgImport: herobg,
   },
   title2: 'Professional Portfolio',
   subtitle2:
-    "For the past three-plus years, I've been working with a variety of clients for VML in Kansas City. The frontend landscape tends to change quickly, and my work reflects that - technologies used run from Gulp.js to Webpack and jQuery to React, with Sass as a mainstay and C#/Razor thrown in where necessary. I've been the only frontend dev on most of my projects, and am no stranger to switching gears as needed.",
+    "For the past three-plus years, I've worked with a variety of clients for VML in Kansas City. The frontend landscape tends to change quickly, and my work reflects that - technologies used run from Gulp.js to Webpack and jQuery to React, with Sass as a mainstay and C#/Razor thrown in where necessary. I've been the only frontend dev on most of my projects, and am no stranger to switching gears as needed.",
   portfolio: [
     {
       title: 'Gatorade',
-      moreInfo: 'Dec 2017 - Present',
+      moreInfo: 'Dec 2017 - November 2018',
       subtitle: 'Preact (and preact-cli), Redux, Sass',
       image: '../images/logo-gatorade-black.png',
     },
     {
       title: 'Tropicana',
-      moreInfo: 'Aug 2015 - Present',
+      moreInfo: 'Aug 2015 - November 2018',
       subtitle: 'C# NET, Gulp, jQuery, Razor, Sass, Sitefinity',
       image: '../images/logo-tropicana-t.png',
     },
@@ -36,7 +36,7 @@ export default {
     },
     {
       title: 'Drink Brisk',
-      moreInfo: 'Jun 2017 - Present',
+      moreInfo: 'Jun 2017 - November 2018',
       subtitle: 'Gulp, Javascript/ES6, Sass, Sitefinity',
       image: '../images/logo-brisk.png',
     },
