@@ -16,6 +16,9 @@ export default ({ data }) => (
     {/* Subtitle */}
     <h3 className="sc-hero__subtitle">{data.subtitle}</h3>
     {/* Copy */}
-    <p className="sc-hero__copy">{data.description}</p>
+    <p
+      className="sc-hero__copy"
+      dangerouslySetInnerHTML={{ __html: data.description }}
+    />
   </div>
 );

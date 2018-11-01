@@ -4,7 +4,7 @@ import React from 'react';
 import homeData from './src/content/home';
 
 export default {
-  // siteRoot: 'https://stone.codes',
+  siteRoot: 'https://stone.codes',
   Document: ({
     Html, Head, Body, children,
   }) => (
