@@ -27,7 +27,7 @@ export default {
       getData: () => homeData,
     },
     {
-      is404: true,
+      path: '404',
       component: 'src/containers/404',
     },
   ],
