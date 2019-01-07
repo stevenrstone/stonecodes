@@ -126,7 +126,7 @@ export default class Dice extends Component {
               >
                 ...
               </button>
-              <div className="sc-dice-more-options"
+              <div className="sc-dice-more-options" />
             </div>
           </div>
         )}
